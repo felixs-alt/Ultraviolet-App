@@ -9,9 +9,9 @@ LABEL description="Example application of Ultraviolet which can be deployed in p
 
 WORKDIR /usr/app
 
-COPY . .
-
 RUN "npm install --omit=dev"
+
+COPY . .
 
 ENTRYPOINT [ "node" ]
 CMD ["src/index.js"]
