@@ -8,9 +8,6 @@ LABEL maintainer="TitaniumNetwork Ultraviolet Team"
 LABEL summary="Ultraviolet Proxy Image"
 LABEL description="Example application of Ultraviolet which can be deployed in production."
 
-WORKDIR /app
-
-COPY ["package.json", "./"]
 RUN apk add --upgrade --no-cache python3 make g++
 RUN $NPM_BUILD
 
