@@ -7,9 +7,11 @@ LABEL maintainer="TitaniumNetwork Ultraviolet Team"
 LABEL summary="Ultraviolet Proxy Image"
 LABEL description="Example application of Ultraviolet which can be deployed in production."
 
-RUN "npm install --omit=dev"
+WORKDIR /app
 
-COPY . .
+COPY ./ ./
+
+RUN "npm install --omit=dev"
 
 ENTRYPOINT [ "node" ]
 CMD ["src/index.js"]
