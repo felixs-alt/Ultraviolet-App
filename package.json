@@ -1,7 +1,7 @@
 {
 	"name": "uv-app",
 	"version": "1.0.0",
-	"description": "Ultraviolet instance",
+	"description": "felixs Ultraviolet instance",
 	"type": "module",
 	"engines": {
 		"npm": ">=7.0.0",
